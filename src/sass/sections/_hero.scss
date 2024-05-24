@@ -1,0 +1,37 @@
+.hero {
+  background-image: url(./src/imgs/desktop/hero/hero-bg@1x-desktop.webp);
+  background-repeat: no-repeat;
+
+  &__title {
+    color: $main-text-color;
+    font-family: "Montserrat Alternates";
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 65px; 
+    margin-bottom: 20px;
+  }
+  &__text {
+    color: $main-text-color;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  &__button {
+    border-radius: 25px;
+    background: $accent;
+    width: 145px;
+    height: 40px;
+    color: $button-text;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  &__svg{
+   width: 16px;
+   height: 16px;
+  }
+}
