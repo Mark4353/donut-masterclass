@@ -29,17 +29,20 @@
     font-weight: 400;
     margin-bottom: 32px;
   }
-  &__button:hover {
+
+  &__button:hover{
     border-radius: 25px;
-    border: 1px solid $accent;
-    background: $button-text;
+border: 1px solid $accent;
+background: $button-text;
   }
-  &__list {
-    display: flex;
-    gap: 16px;
-  }
-  &__svg {
+
+&__list{
+  display: flex;
+  gap: 16px;
+}
+  &__svg{
     width: 16px;
-    height: 16px;
+height: 16px;
+
   }
 }
