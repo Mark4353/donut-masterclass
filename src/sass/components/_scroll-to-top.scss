@@ -1,0 +1,15 @@
+.gotopbtn {
+    position: fixed;
+    width: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    height: 60px;
+    background: $accent;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 40px;
+  }
