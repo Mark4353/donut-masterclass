@@ -2,7 +2,6 @@
   background-image: url(./src/imgs/desktop/hero/hero-bg@1x-desktop.webp);
   background-repeat: no-repeat;
   background-size: 100%;
-
   &__title {
     color: $main-text-color;
     font-family: Montserrat Alternates;
@@ -44,5 +43,6 @@ background: $button-text;
   &__svg{
     width: 16px;
 height: 16px;
+
   }
 }
