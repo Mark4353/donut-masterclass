@@ -1,4 +1,30 @@
 .program {
+    padding: 18px 0 35px;
+    padding: 80px 0 44px;
+    padding: 100px 0 100px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+
+        @media screen and (min-width: 736px) {
+            gap: 39px;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1278px) {
+            gap: 116px;
+        }
+    }
+
+    &__text-container {
+
+        @media screen and (min-width: 736px) {}
+
+        @media screen and (min-width: 1278px) {}
+    }
 
     &__title {
         font-family: "Montserrat Alternates", sans-serif;
@@ -6,9 +32,43 @@
         font-size: 24px;
         text-align: center;
         color: #3c322d;
+        margin-bottom: 8px;
 
         @media screen and (min-width: 736px) {
             font-size: 32px;
+            margin-bottom: 28px;
+            text-align: left;
+        }
+
+        @media screen and (min-width: 1278px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__collection {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 736px) {
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        @media screen and (min-width: 1278px) {
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        @media screen and (min-width: 1278px) {
+            gap: 16px;
         }
     }
 
@@ -16,9 +76,15 @@
         font-weight: 400;
         font-size: 16px;
         color: #3c322d;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 736px) {
+            margin-bottom: 12px;
+        }
 
         @media screen and (min-width: 1278px) {
             font-size: 18px;
+            margin-bottom: 20px;
         }
     }
 
@@ -26,9 +92,15 @@
         font-weight: 400;
         font-size: 16px;
         color: #3c322d;
+        max-width: 247px;
+
+        @media screen and (min-width: 736px) {
+            max-width: 297px;
+        }
 
         @media screen and (min-width: 1278px) {
             font-size: 18px;
+            max-width: 376px;
         }
     }
 
@@ -58,10 +130,194 @@
         }
     }
 
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+
+        @media screen and (min-width: 736px) {
+            gap: 0 33px;
+            min-width: 337px;
+        }
+
+        @media screen and (min-width: 1278px) {
+            gap: 0px 138px;
+            min-width: 716px;
+        }
+    }
+
+    &__point {
+        width: 130px;
+        height: 130px;
+        border: 1px solid $accent;
+        padding-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 10px 15px 25px 0 rgba(210, 201, 201, 0.45);
+
+        @media screen and (min-width: 736px) {
+            width: 152px;
+            height: 152px;
+            padding-top: 79px;
+        }
+
+        @media screen and (min-width: 1278px) {
+            width: 287px;
+            height: 288px;
+            padding-top: 191px;
+        }
+
+
+        &:first-child {
+            background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-1@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-1@2x-mobile.webp);
+            }
+
+            @media screen and (min-width: 736px) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-1@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-1@2x-tablet.webp);
+                }
+            }
+
+            @media screen and (min-width: 1278px) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-1@1x-desktop.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-1@2x-desktop.webp);
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 20px;
+            background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-2@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-2@2x-mobile.webp);
+            }
+
+            @media screen and (min-width: 736px) {
+                margin-top: 40px;
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-2@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-2@2x-tablet.webp);
+                }
+            }
+
+            @media screen and (min-width: 1278px) {
+                margin-top: 65px;
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-2@1x-desktop.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-2@2x-desktop.webp);
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-3@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-3@2x-mobile.webp);
+            }
+
+            @media screen and (min-width: 736px) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-3@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-3@2x-tablet.webp);
+                }
+            }
+
+            @media screen and (min-width: 1278px) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-3@1x-desktop.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-3@2x-desktop.webp);
+                }
+            }
+        }
+
+        &:last-child {
+            margin-top: 20px;
+            background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-4@1x-mobile.webp);
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/mobile/program/program-4@2x-mobile.webp);
+            }
+
+            @media screen and (min-width: 736px) {
+                margin-top: 40px;
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-4@1x-tablet.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/tablet/program/program-4@2x-tablet.webp);
+                }
+            }
+
+            @media screen and (min-width: 1278px) {
+                margin-top: 65px;
+                background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-4@1x-desktop.webp);
+
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(360deg, #000 3.4%, rgba(156, 156, 156, 0) 100%), url(../../imgs/desktop/program/program-4@2x-desktop.webp);
+                }
+            }
+        }
+    }
+
     &__subtitle {
+        font-family: "Montserrat Alternates", sans-serif;
         font-weight: 500;
         font-size: 14px;
         color: #fff;
+        margin-bottom: 8px;
 
         @media screen and (min-width: 736px) {
             font-size: 16px;
@@ -82,7 +338,7 @@
         }
 
         @media screen and (min-width: 1278px) {
-            font-size: 26px;
+            font-size: 16px;
         }
     }
 }
