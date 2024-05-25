@@ -1,3 +1,140 @@
+.price {
+    padding: 20px 0;
+    background-image: url(../imgs/mobile/price/price-bg@1x-mobile.webp);
+    background-size: 308px, 974px;
+    background-position-x: center;
+    background-position-y: 12px;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../imgs/mobile/price/price-bg@2x-mobile.webp);
+    }
+
+    &__title {
+        color: $decor-color;
+        text-align: center;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 27px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        width: 100%;
+        padding: 20px 10px;
+        border-radius: 25px;
+        background-color: #FAFBFB;
+        box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+        background-image: url(../imgs/mobile/price/price-img@1x-mobile.webp);
+        background-size: 200px, 145px;
+        background-position-x: center;
+        background-position-y: 251px;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../imgs/mobile/price/price-img@2x-mobile.webp);
+        }
+
+        &:hover,
+        &:focus {
+            outline: 1px solid $accent;
+        }
+
+        &:nth-child(1) {
+            background-image: none;
+        }
+
+        &:nth-child(3) {
+            background-position-y: 341px;
+        }
+    }
+
+    &__subtitle {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 16px;
+        color: $decor-color;
+        font-size: 18px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__detail {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__use {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $decor-color;
+        width: 220px;
+    }
+
+    &__btn {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $button-text;
+        border: none;
+        background-color: $accent;
+        padding: 7px 34px 9px;
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+        border: 1px solid $accent;
+        margin-top: 30px;
+
+        &:hover {
+            border: 1px solid $accent;
+            background: $button-text;
+            color: $accent;
+        }
+
+        &:focus {
+            box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset, 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+            border: 1px solid $button-text;
+            background: $accent;
+            outline: none;
+            color: $button-text;
+        }
+    }
+
+}
+
 @media screen and (min-width: 1280px) {
     .price {
         padding: 50px 0;
@@ -10,21 +147,18 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
+            background-image: url(../imgs/desktop/price/price-bg@1\2x-desktop.webp);
         }
 
         &__title {
-            font-family: "Montserrat Alternates", sans-serif;
-            font-weight: 500;
             font-size: 32px;
-            text-align: center;
-            color: $decor-color;
-            margin-bottom: 27px;
         }
 
         &__list {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
+            gap: 0;
         }
 
         &__item {
@@ -49,6 +183,14 @@
             &:hover,
             &:focus {
                 outline: 1px solid $accent;
+            }
+
+            &:nth-child(1) {
+                background-image: url(../imgs/desktop/price/price-img@1x-desktop.webp);
+            }
+
+            &:nth-child(3) {
+                background-position-y: 297px;
             }
         }
 
@@ -110,6 +252,7 @@
             display: block;
             box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
             border: 1px solid $accent;
+            margin-top: 0;
 
             &:hover {
                 border: 1px solid $accent;
