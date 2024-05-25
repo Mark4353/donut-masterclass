@@ -1,44 +1,129 @@
-.price {
+@media screen and (min-width: 1280px) {
+    .price {
+        padding: 50px 0;
+        background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
+        background-size: 631px, 741px;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
 
-    &__title {
-        font-family: "Montserrat Alternates", sans-serif;
-        font-weight: 500;
-        font-size: 32px;
-        text-align: center;
-        color: #2e2520;
-    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
+        }
 
-    &__list {}
+        &__title {
+            font-family: "Montserrat Alternates", sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+            text-align: center;
+            color: $decor-color;
+            margin-bottom: 27px;
+        }
 
-    &__item {}
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
 
-    &__subtitle {
-        font-family: "Montserrat Alternates", sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        text-align: center;
-        color: #3c322d;
-    }
+        &__item {
+            width: 395px;
+            height: 610px;
+            padding: 28px 10px 40px;
+            border-radius: 25px;
+            background-color: #FAFBFB;
+            box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+            background-image: url(../imgs/desktop/price/price-img@1x-desktop.webp);
+            background-size: 300px, 218px;
+            background-position-x: 48px;
+            background-position-y: 297px;
+            background-repeat: no-repeat;
 
-    &__details {}
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../imgs/desktop/price/price-img@2x-desktop.webp);
+            }
 
-    &__detail {}
+            &:hover,
+            &:focus {
+                outline: 1px solid $accent;
+            }
+        }
 
-    &__icon {}
+        &__subtitle {
+            font-family: "Montserrat Alternates", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            color: $main-text-color;
+            margin-bottom: 40px;
+        }
 
-    &__text {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        color: #3c322d;
-    }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(610px - 92px - 40px);
+        }
 
-    &__btn {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        color: #fff;
-        border: none;
-        background-color: #f3848c;
+        &__details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__detail {
+            display: flex;
+            gap: 16px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__use {
+            width: 24px;
+            height: 24px;
+        }
+
+        &__text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: $main-text-color;
+            width: 335px;
+        }
+
+        &__btn {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            color: $button-text;
+            border: none;
+            background-color: $accent;
+            padding: 7px 34px 9px;
+            border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+            border: 1px solid $accent;
+
+            &:hover {
+                border: 1px solid $accent;
+                background: $button-text;
+                color: $accent;
+            }
+
+            &:focus {
+                box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset, 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+                border: 1px solid $button-text;
+                background: $accent;
+                outline: none;
+                color: $button-text;
+            }
+        }
     }
 }
