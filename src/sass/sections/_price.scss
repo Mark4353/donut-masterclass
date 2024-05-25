@@ -1,7 +1,7 @@
 @media screen and (min-width: 1280px) {
     .price {
         padding: 50px 0;
-        background-image: url(../../imgs/desktop/price/price-bg@1x-desktop.webp);
+        background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
         background-size: 631px, 741px;
         background-position-x: center;
         background-position-y: center;
@@ -10,7 +10,7 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../imgs/desktop/price/price-bg@1x-desktop.webp);
+            background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
         }
 
         &__title {
@@ -34,7 +34,7 @@
             border-radius: 25px;
             background-color: #FAFBFB;
             box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
-            background-image: url(../../imgs/desktop/price/price-img@1x-desktop.webp);
+            background-image: url(../imgs/desktop/price/price-img@1x-desktop.webp);
             background-size: 300px, 218px;
             background-position-x: 48px;
             background-position-y: 297px;
@@ -43,7 +43,7 @@
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../../imgs/desktop/price/price-img@2x-desktop.webp);
+                background-image: url(../imgs/desktop/price/price-img@2x-desktop.webp);
             }
 
             &:hover,
