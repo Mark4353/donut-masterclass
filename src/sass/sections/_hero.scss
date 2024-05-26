@@ -4,7 +4,6 @@
   background-image: url(./src/imgs/desktop/hero/hero-bg@1x-desktop.webp);
 
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: url("./src/imgs/desktop/hero/hero-bg@2x-desktop.webp");
@@ -17,7 +16,6 @@
     background-image: url(./src/imgs/tablet/hero/hero-bg@1x-tablet.webp);
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("./src/imgs/tablet/hero/hero-bg@2x-tablet.webp");
@@ -28,7 +26,6 @@
     background-image: url(./src/imgs/mobile/hero/hero-bg@1x-mobile.webp);
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: url("./src/imgs/mobile/hero/hero-bg@2-mobile.webp");
