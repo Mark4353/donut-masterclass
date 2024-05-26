@@ -1,0 +1,89 @@
+.registration {
+    padding: 0px 0px 80px 0px;
+   
+
+    &__title {
+        text-align: center;
+        padding-bottom: 28px ;
+    }
+
+    &__img {
+        width: 200px;
+        height: 133px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__day {
+
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    &__input {
+        border: none;
+        border-bottom: solid 1px #2E2520;
+        outline: none;
+    }
+    
+    &__input::placeholder {
+        color: #2E2520;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__ditection {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 103px;
+        right: 232px;
+        display: block;
+        width: 145px;
+        height: 40px;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 25px;
+        background: #F3848C;
+        border: none;
+        box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+    }
+
+}
+
+
+.block {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    padding: 40px 0px 40px 0px;
+    // background-image: url(../../imgs/desktop/registration/registration-bg@1x-desktop.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+
+    &__text {
+        border-left: solid 1px #2E2520;
+        padding-left: 28px;
+    }
+
+    &__day {
+        padding-right: 28px;
+        display: flex;
+        align-items: start;
+        padding-top: 57px ;
+       
+    }
+}
