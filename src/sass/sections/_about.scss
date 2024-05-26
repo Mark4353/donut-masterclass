@@ -1,8 +1,18 @@
 .about {
   &__box {
-    display: flex;
-    padding-top: 64px;
-    gap: 32px;
+    display: block;
+    padding-top: 20px;
+
+    @media screen and (min-width: 736px) {
+      display: flex;
+      padding-top: 36px;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1278px) {
+      padding-top: 64px;
+      gap: 32px;
+    }
   }
 
   &__donuts {
@@ -12,22 +22,59 @@
   &__title {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
-    font-size: 32px;
-    text-align: start;
-    color: #2e2520;
-    margin-bottom: 28px;
+    font-size: 24px;
+    text-align: center;
+    color: $decor-color;
+    margin-top: 28px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 736px) {
+      text-align: start;
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
   }
 
   &__item {
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+
+    @media screen and (min-width: 1278px) {
+      padding-bottom: 30px;
+    }
+    &:last-child {
+      display: none;
+
+      @media screen and (min-width: 1278px) {
+        display: flex;
+      }
+    }
   }
 
   &__text {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: #3c322d;
+    color: $main-text-color;
+
+    @media screen and (min-width: 1278px) {
+      font-size: 18px;
+    }
+  }
+
+  &__continue {
+    color: $main-text-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (min-width: 1278px) {
+      display: none;
+    }
+
   }
 }
