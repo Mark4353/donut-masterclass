@@ -26,23 +26,23 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url(../../imgs/mobile/menu/menu-bg2@1xmobile.webp) , url(../../imgs/mobile/menu/menu-bg1@1xmobile.webp);
+    background-image: url(../imgs/mobile/menu/menu-bg2@1xmobile.webp) , url(../imgs/mobile/menu/menu-bg1@1xmobile.webp);
     background-repeat: no-repeat;
     background-position: right center , bottom left;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../imgs/mobile/menu/menu-bg2@2xmobile.webp) , url(../../imgs/mobile/menu/menu-bg1@2xmobile.webp);
+        background-image: url(../imgs/mobile/menu/menu-bg2@2xmobile.webp) , url(../imgs/mobile/menu/menu-bg1@2xmobile.webp);
         background-repeat: no-repeat;
         background-position: right center , bottom left;
     }
 
     @media screen and (min-width: 736px) {
-        background-image: url(../../imgs/tablet/menu/menu-bg2@1xtablet.webp) , url(../../imgs/tablet/menu/menu-bg@1xtablet.webp);
+        background-image: url(../imgs/tablet/menu/menu-bg2@1xtablet.webp) , url(../imgs/tablet/menu/menu-bg@1xtablet.webp);
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../imgs/tablet/menu/menu-bg2@2xtablet.webp) , url(../../imgs/tablet/menu/menu-bg@2xtablet.webp);
+            background-image: url(../imgs/tablet/menu/menu-bg2@2xtablet.webp) , url(../imgs/tablet/menu/menu-bg@2xtablet.webp);
         }
     }
 
