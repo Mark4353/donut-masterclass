@@ -12,6 +12,8 @@
 }
 
 .is-hidden {
+    display: none;
+    pointer-events: none;
     visibility: hidden;
 }
 
@@ -37,7 +39,7 @@
         border: none;
 
         @media screen and (min-width: 736px) {
-            right: 32px;
+            right: 70px;
             top: 32px;
         }
     }
