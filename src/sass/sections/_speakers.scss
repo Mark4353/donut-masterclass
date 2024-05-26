@@ -5,7 +5,7 @@
         font-family: "Montserrat Alternates";
         font-size: 24px;
         font-weight: 500;
-
+        
         @media screen and (min-width:736px) {
             font-size: 32px;
         }
@@ -15,36 +15,45 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 280px;
-        padding-bottom: 101px;
         
         @media screen and (min-width:736px) {
             display: flex;
             flex-wrap: nowrap;
-            justify-content: center;
             gap: 32px;
-            width: 704px;
+           
         }
         @media screen and (min-width:1280px) {
-            gap: 104px;
-            width: 1141px;
+            gap: 32px;
+            
         }
     }
 
-    &__item-img {
-        // background-color: pink;
-        // border-radius: 50%;
+    &__item-img{
+        position: relative;
+       
     }
+
 
     &__bg-img {
         display: flex;
         justify-content: center;
         overflow: hidden;
-        width: 288px;
-        height: 288px;
+        width: 130px;
+        height: 130px;
         background-color: pink;
         border-radius: 50%;
+        position: relative;
+
+        @media screen and (min-width:736px) {
+            width: 152px;
+            height: 152px;
+        }
+        @media screen and (min-width:1280px) {
+            width: 288px;
+            height: 288px;
+        }
     }
+
 
     &__sub-title {
         color: var(--, #3C322D);
@@ -52,6 +61,7 @@
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 600;
+        margin-top: 20px;
         margin-bottom: 20px;
 
         @media screen and (min-width:736px) {
@@ -60,12 +70,14 @@
     }
 
     &__text {
-        color: var(--, #3C322D);
+        color: #3C322D;
         text-align: center;
         font-family: Montserrat;
         font-size: 12px;
         font-weight: 500;
         max-width: 130px;
+        margin-left: auto;
+        margin-right: auto;
 
         @media screen and (min-width:736px) {
             font-size: 14px;
@@ -76,5 +88,16 @@
             font-size: 16px;
             max-width: 181px;
         }
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__wrap-img {
+        position: absolute;
+        top: -15px;
+        left: 40px;
+        z-index: 4;
     }
 }
