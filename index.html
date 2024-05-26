@@ -21,7 +21,7 @@
 
     <title>Donut Masterclass</title>
     <script type="module" crossorigin src="/donut-masterclass-shop/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/donut-masterclass-shop/assets/index-d00b72e9.css">
+    <link rel="stylesheet" href="/donut-masterclass-shop/assets/index-981f9bc4.css">
   </head>
   <body>
     <header class="header">
@@ -89,11 +89,31 @@
 </section>
     <section class="about">
   <div class="container about__box">
-    <img
-      class="about__donuts"
-      src="../imgs/desktop/about/about-img@1x-desktop.webp"
-      alt=""
-    />
+    <picture>
+      <source
+        srcset="
+          ../imgs/desktop/about/about-img@1x-desktop.webp 1x,
+          ../imgs/desktop/about/about-img@2x-desktop.webp 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ../imgs/mobile/about/about-img@1x-mobile.webp 1x,
+          ../imgs/mobile/about/about-img@2x-mobile.webp 2x
+        "
+        media="(max-width: 736px)"
+      />
+      <source
+        srcset="
+          ../imgs/tablet/about/about-img@1x-tablet.webp 1x,
+          ../imgs/tablet/about/about-img@2x-tablet.webp 2x
+        "
+        media="(min-width: 736px)"
+      />
+      <img class="about__donuts" src="" alt="" />
+    </picture>
+
     <div class="about__wrap">
       <h2 class="about__title">About us</h2>
       <ul class="about__list">
@@ -119,9 +139,11 @@
           </p>
         </li>
       </ul>
+      <p class="about__continue">Read more</p>
     </div>
   </div>
 </section>
+
     <section class="program">
   <div class="container">
     <div class="program__container">
