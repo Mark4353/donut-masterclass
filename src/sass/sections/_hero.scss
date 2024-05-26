@@ -1,32 +1,35 @@
 .hero {
-  padding-top: 65px;
+  padding-top: 86px;
   padding-bottom: 90px;
-  background-image: url(../../imgs/desktop/hero/hero-bg@1x-desktop.webp);
+  background-size: cover;
+  background-image: url(../../imgs/mobile/hero/hero-bg@1x-mobile.webp);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
 
-    background-image: url("./src/imgs/desktop/hero/hero-bg@2x-desktop.webp");
+    background-image: url("../../imgs/mobile/hero/hero-bg@2x-mobile.webp");
   }
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (min-width: 768px) {
-    background-image: url(./src/imgs/tablet/hero/hero-bg@1x-tablet.webp);
+  @media screen and (min-width: 736px) {
+    padding-top: 98px;
+    background-image: url(../../imgs/tablet/hero/hero-bg@1x-tablet.webp);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("./src/imgs/tablet/hero/hero-bg@2x-tablet.webp");
+      background-image: url("../../imgs/tablet/hero/hero-bg@2x-tablet.webp");
     }
   }
-  @media screen and (min-width: 360px) {
-    background-image: url(./src/imgs/mobile/hero/hero-bg@1x-mobile.webp);
+  @media screen and (min-width: 1280px) {
+    padding-top: 171px;
+    background-image: url(../../imgs/desktop/hero/hero-bg@1x-desktop.webp);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("./src/imgs/mobile/hero/hero-bg@2-mobile.webp");
+      background-image: url("../../imgs/desktop/hero/hero-bg@2x-desktop.webp");
     }
   }
   &__title {
@@ -43,7 +46,7 @@
       font-size: 30px;
       font-weight: 600;
     }
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 1280px) {
       color: $main-text-color;
       text-align: center;
       font-family: Montserrat Alternates;
