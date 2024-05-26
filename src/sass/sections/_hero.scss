@@ -1,60 +1,56 @@
 .hero {
   padding-top: 65px;
   padding-bottom: 90px;
-  background-image: url(./src/imgs/desktop/hero/hero-bg@1x-desktop.webp);
+  background-image: url(../../imgs/desktop/hero/hero-bg@1x-desktop.webp);
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
-    background-image: url("./src/imgs/desktop/hero/hero-bg@2x-desktop.webp");
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../../imgs/desktop/hero/hero-bg@2x-desktop.webp");
   }
   background-repeat: no-repeat;
   background-position: center;
-@media screen and (min-width: 768px){
-    background-image: url(./src/imgs/tablet/hero/hero-bg@1x-tablet.webp);
-    @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
-    background-image: url("./src/imgs/tablet/hero/hero-bg@2x-tablet.webp");
-  }
-}
-  @media screen and (min-width: 360px){
-    background-image: url(./src/imgs/mobile/hero/hero-bg@1x-mobile.webp);
-    @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
-    background-image: url("./src/imgs/mobile/hero/hero-bg@2-mobile.webp");
-  }
-
-}
+  // @media screen and (min-width: 736px) {
+  //   background-image: url(../../imgs/tablet/hero/hero-bg@1x-tablet.webp);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url("../../imgs/tablet/hero/hero-bg@2x-tablet.webp");
+  //   }
+  // }
+  // @media screen and (min-width: 360px) {
+  //   background-image: url(../../imgs/mobile/hero/hero-bg@1x-mobile.webp);
+  //   @media (min-device-pixel-ratio: 2),
+  //     (-webkit-min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url("../../imgs/mobile/hero/hero-bg@2x-mobile.webp");
+  //   }
+  // }
   &__title {
     color: $main-text-color;
     font-family: Montserrat Alternates;
     font-size: 60px;
     font-weight: 600;
-    line-height: 1, 805;
+    line-height: 1.8;
     margin-bottom: 20px;
+
     @media screen and (min-width: 768px) {
-  color: $main-text-color;
-  font-family: Montserrat Alternates;
-  font-size: 30px;
-  font-weight: 600;
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 30px;
+      font-weight: 600;
     }
     @media screen and (min-width: 320px) {
-        color: $main-text-color;
-        text-align: center;
-        font-family: Montserrat Alternates;
-        font-size: 28px;
-        font-weight: 600;
-        letter-spacing: -0.84px;
-    }
+      color: $main-text-color;
 
-  }    
+      font-family: Montserrat Alternates;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.84px;
+    }
+  }
   &__text {
     color: $main-text-color;
     font-family: Montserrat Alternates;
@@ -62,20 +58,21 @@
     font-weight: 500;
     margin-bottom: 28px;
     @media screen and (min-width: 768px) {
-        color:$main-text-color ;
-        font-family: Montserrat Alternates;
-        font-size: 16px;
-        font-weight: 500;
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 16px;
+      font-weight: 500;
     }
     @media screen and (min-width: 320px) {
-        color:$main-text-color ;
-        font-family: Montserrat Alternates;
-        font-size: 16px;
-        font-weight: 500;
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
   &__button {
-    border-radius: 25px;
+    border: #F3848C 1px;
+    border-radius: 25px  ;
     background: $accent;
     width: 145px;
     height: 40px;
@@ -85,7 +82,8 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 32px;
-  
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__button:hover {
@@ -94,7 +92,10 @@
     border: 1px solid $accent;
     background: $button-text;
   }
-
+  &__button:active {
+    box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset,
+      10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+  }
   &__list {
     display: flex;
     gap: 16px;
@@ -102,6 +103,8 @@
   &__svg {
     width: 16px;
     height: 16px;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__svg:hover {
