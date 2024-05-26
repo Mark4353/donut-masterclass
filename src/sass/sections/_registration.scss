@@ -34,6 +34,8 @@
         color: #2E2520;
         font-size: 16px;
         font-weight: 400;
+        background-color: transparent;
+        background-color: #F6F7F7;
     }
 
     &__ditection {
@@ -65,12 +67,12 @@
 
 .block {
     position: relative;
-    background-color: #fff;
     display: flex;
-    padding: 40px 0px 40px 0px;
-    // background-image: url(../../imgs/desktop/registration/registration-bg@1x-desktop.webp);
+    padding: 26px 0px 26px 0px;
+    background-image: url(../imgs/desktop/registration/registration-fone.svg );
     background-repeat: no-repeat;
     background-position: right;
+    background-size: cover ;
     border-radius: 10px;
     box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
 
@@ -85,5 +87,15 @@
         align-items: start;
         padding-top: 57px ;
        
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-radius: 10px;
+        width: 453px;
+        height: 246px;
     }
 }
