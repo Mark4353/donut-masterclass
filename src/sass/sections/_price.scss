@@ -13,7 +13,7 @@
     }
 
     &__title {
-        color: $decor-color;
+        color: $main-text-color;
         text-align: center;
         font-family: "Montserrat Alternates";
         font-size: 24px;
@@ -64,7 +64,7 @@
         font-weight: 600;
         text-align: center;
         margin-bottom: 16px;
-        color: $decor-color;
+        color: $main-text-color;
         font-size: 18px;
     }
 
@@ -77,29 +77,19 @@
     &__details {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
     }
 
     &__detail {
         display: flex;
-        gap: 12px;
-    }
-
-    &__icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    &__use {
-        width: 24px;
-        height: 24px;
+        gap: 10px;
     }
 
     &__text {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 18px;
-        color: $decor-color;
+        color: $main-text-color;
         width: 220px;
     }
 
@@ -135,14 +125,73 @@
 
 }
 
+@media screen and (min-width: 736px) {
+    .price {
+        padding: 40px 0;
+        background-image: url(../imgs/tablet/price/price-bg@1x-tablet.webp);
+        background-size: 713px, 719px;
+        background-position-y: 36px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../imgs/tablet/price/price-bg@1\2x-tablet.webp);
+        }
+
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+        }
+
+        &__item {
+            width: 225px;
+            height: 580px;
+            padding: 20px 10px;
+
+            &:nth-child(2) .price__wrapper {
+                height: calc(580px - 80px - 20px);
+            }
+
+            background-image: url(../imgs/tablet/price/price-img@1x-tablet.webp);
+            background-position-y: 339px;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../imgs/tablet/price/price-img@2x-tablet.webp);
+            }
+
+            &:nth-child(1) {
+                background-image: url(../imgs/tablet/price/price-img@1x-tablet.webp);
+            }
+
+            &:nth-child(3) {
+                background-position-y: 339px;
+            }
+        }
+
+        &__wrapper {
+            height: calc(580px - 59px - 20px);
+        }
+
+        &__text {
+            font-size: 16px;
+            width: 170px;
+        }
+
+        &__btn {
+            margin-top: 0;
+        }
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .price {
         padding: 50px 0;
         background-image: url(../imgs/desktop/price/price-bg@1x-desktop.webp);
         background-size: 631px, 741px;
-        background-position-x: center;
-        background-position-y: center;
-        background-repeat: no-repeat;
+        background-position-y: 10px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -154,35 +203,18 @@
             font-size: 32px;
         }
 
-        &__list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 0;
-        }
-
         &__item {
             width: 395px;
             height: 610px;
             padding: 28px 10px 40px;
-            border-radius: 25px;
-            background-color: #FAFBFB;
-            box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
             background-image: url(../imgs/desktop/price/price-img@1x-desktop.webp);
             background-size: 300px, 218px;
-            background-position-x: 48px;
             background-position-y: 297px;
-            background-repeat: no-repeat;
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../imgs/desktop/price/price-img@2x-desktop.webp);
-            }
-
-            &:hover,
-            &:focus {
-                outline: 1px solid $accent;
             }
 
             &:nth-child(1) {
@@ -195,78 +227,28 @@
         }
 
         &__subtitle {
-            font-family: "Montserrat Alternates", sans-serif;
-            font-weight: 600;
             font-size: 20px;
-            text-align: center;
-            color: $main-text-color;
             margin-bottom: 40px;
         }
 
         &__wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             height: calc(610px - 92px - 40px);
         }
 
         &__details {
-            display: flex;
-            flex-direction: column;
             gap: 16px;
         }
 
         &__detail {
-            display: flex;
             gap: 16px;
         }
 
-        &__icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        &__use {
-            width: 24px;
-            height: 24px;
-        }
-
         &__text {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: $main-text-color;
             width: 335px;
         }
 
         &__btn {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            color: $button-text;
-            border: none;
-            background-color: $accent;
-            padding: 7px 34px 9px;
-            border-radius: 25px;
-            margin: 0 auto;
-            display: block;
-            box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
-            border: 1px solid $accent;
             margin-top: 0;
-
-            &:hover {
-                border: 1px solid $accent;
-                background: $button-text;
-                color: $accent;
-            }
-
-            &:focus {
-                box-shadow: 0px 4px 4px 0px rgba(107, 66, 66, 0.25) inset, 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
-                border: 1px solid $button-text;
-                background: $accent;
-                outline: none;
-                color: $button-text;
-            }
         }
     }
 }
