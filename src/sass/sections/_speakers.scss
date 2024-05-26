@@ -31,6 +31,21 @@
         }
     }
 
+    &__item-img {
+        // background-color: pink;
+        // border-radius: 50%;
+    }
+
+    &__bg-img {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 288px;
+        height: 288px;
+        background-color: pink;
+        border-radius: 50%;
+    }
+
     &__sub-title {
         color: var(--, #3C322D);
         text-align: center;
