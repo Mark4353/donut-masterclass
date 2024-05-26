@@ -3,35 +3,31 @@
   padding-bottom: 90px;
   background-image: url(./src/imgs/desktop/hero/hero-bg@1x-desktop.webp);
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url("./src/imgs/desktop/hero/hero-bg@2x-desktop.webp");
   }
   background-repeat: no-repeat;
   background-position: center;
-@media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     background-image: url(./src/imgs/tablet/hero/hero-bg@1x-tablet.webp);
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
-    background-image: url("./src/imgs/tablet/hero/hero-bg@2x-tablet.webp");
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("./src/imgs/tablet/hero/hero-bg@2x-tablet.webp");
+    }
   }
-}
-  @media screen and (min-width: 360px){
+  @media screen and (min-width: 360px) {
     background-image: url(./src/imgs/mobile/hero/hero-bg@1x-mobile.webp);
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) 
-   {
-    background-image: url("./src/imgs/mobile/hero/hero-bg@2-mobile.webp");
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("./src/imgs/mobile/hero/hero-bg@2-mobile.webp");
+    }
   }
-
-}
   &__title {
     color: $main-text-color;
     font-family: Montserrat Alternates;
@@ -39,39 +35,38 @@
     font-weight: 600;
     line-height: 1, 805;
     margin-bottom: 20px;
-    @media screen and(min-width: 768px) {
-  color: $main-text-color;
-  font-family: Montserrat Alternates;
-  font-size: 30px;
-  font-weight: 600;
+    @media screen and (min-width: 768px) {
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 30px;
+      font-weight: 600;
     }
-    @media screen and(min-width: 320px) {
-        color: $main-text-color;
-        text-align: center;
-        font-family: Montserrat Alternates;
-        font-size: 28px;
-        font-weight: 600;
-        letter-spacing: -0.84px;
+    @media screen and (min-width: 320px) {
+      color: $main-text-color;
+      text-align: center;
+      font-family: Montserrat Alternates;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.84px;
     }
-
-  }    
+  }
   &__text {
     color: $main-text-color;
     font-family: Montserrat Alternates;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 28px;
-    @media screen and(min-width: 768px) {
-        color:$main-text-color ;
-        font-family: Montserrat Alternates;
-        font-size: 16px;
-        font-weight: 500;
+    @media screen and (min-width: 768px) {
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 16px;
+      font-weight: 500;
     }
-    @media screen and(min-width: 320px) {
-        color:$main-text-color ;
-        font-family: Montserrat Alternates;
-        font-size: 16px;
-        font-weight: 500;
+    @media screen and (min-width: 320px) {
+      color: $main-text-color;
+      font-family: Montserrat Alternates;
+      font-size: 16px;
+      font-weight: 500;
     }
   }
   &__button {
@@ -85,7 +80,6 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 32px;
-  
   }
 
   &__button:hover {
