@@ -21,7 +21,7 @@
 
     <title>Donut Masterclass</title>
     <script type="module" crossorigin src="/donut-masterclass-shop/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/donut-masterclass-shop/assets/index-9e675423.css">
+    <link rel="stylesheet" href="/donut-masterclass-shop/assets/index-68a5a148.css">
   </head>
   <body>
     <header class="header">
@@ -664,27 +664,27 @@
             <h2 class="registration__title">Registration</h2>
             <div class="block">
               <div class="block__day">
+                <picture>
+                  <source srcset="./imgs/desktop/registration/registration-img@1x-desktop.webp 1x, ./images/desktop/registration/registration-img@2x-desktop.webp 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/tablet/registration/registration-img@1x-tablet.webp 1x, ./images/tablet/registration/registration-img@2x-tablet.webp 2x" media="(min-width: 768px)">
+                  <img class="registration__img" src="" alt="" />
+                </picture>
                 <p class="registration__day">May 23, 11:00 New York</p>
               </div>
               <div class="block__text">
                 <p class="registration__text">Apply your personal info for registration</p>
+               
                 <div class="registration__ditection">
                   <div class="registration__domain">
                     <input
-                      class="registration__input" type="text" name="user-name" id="name" placeholder="&nbsp;" pattern="^[a-zA-Z]+$"
+                      class="registration__input" type="text" name="user-name" id="name" placeholder="Your name" pattern="^[a-zA-Z]+$"
                       title="Please enter valid name" required/>
-                    <label class="registration__label" for="name">Your name</label
-                    >
                   </div>
                   <div class="registration__domain">
-                    <input class="registration__input" type="tel" name="user-phone" id="tel" placeholder="&nbsp;" pattern="[6789][0-9]{9}" title="Please enter valid phone number" required/>
-                    <label class="registration__label" for="tel">Phone number</label>
+                    <input class="registration__input" type="tel" name="user-phone" id="tel" placeholder="Phone number" pattern="[6789][0-9]{9}" title="Please enter valid phone number" required/>
                   </div>
                   <div class="registration__domain">
-                    <input class="registration__input" type="email" name="user-email" id="registration-email" placeholder="&nbsp;" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" title="valid@email.com" required/>
-                    <label class="registration__label" for="registration-email"
-                      >Email</label
-                    >
+                    <input class="registration__input" type="email" name="user-email" id="registration-email" placeholder="registration-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" title="valid@email.com" required/>
                   </div>
                 </div>
               </div>
@@ -694,13 +694,8 @@
             </div>
           </div>
         </form>
-        <picture>
-          <source srcset="./imgs/desktop/registration/registration-img@1x-desktop.webp 1x, ./images/desktop/registration/registration-img@2x-desktop.webp 2x" media="(min-width: 1200px)">
-          <source srcset="./images/tablet/registration/registration-img@1x-tablet.webp 1x, ./images/tablet/registration/registration-img@2x-tablet.webp 2x" media="(min-width: 768px)">
-          <img class="registration" src="" alt="" />
-        </picture>
       </div>
-    </div>
+    </div>  
   </section>
     <footer class="footer">
   <section class="footer__contacts">
