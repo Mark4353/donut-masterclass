@@ -61,6 +61,11 @@ line-height: normal;
     fill: $star-color;
 }
 
+&__icon-filled {
+    fill: none;
+    stroke: $star-color;
+}
+
 &__text {
     color: $main-text-color;
 text-align: center;
