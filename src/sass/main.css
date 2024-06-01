@@ -1139,6 +1139,10 @@ html {
 .reviews__icon {
   fill: #EDD501;
 }
+.reviews__iconitem:nth-child(5) .reviews__icon {
+  fill: transparent;
+  stroke: #EDD501;
+}
 .reviews__text {
   color: #3c322d;
   text-align: center;
@@ -1306,6 +1310,10 @@ html {
   .block__text {
     padding-left: 40px;
   }
+}
+.block__text {
+  border-left: solid 1px #2E2520;
+  padding-left: 28px;
 }
 .block__day {
   padding-right: 28px;
