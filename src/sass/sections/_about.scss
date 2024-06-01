@@ -1,80 +1,105 @@
 .about {
-  &__box {
-    display: block;
-    padding-top: 20px;
+&__box {
+  display: block;
+  padding-top: 20px;
+  background-image: url(../imgs/mobile/backgraund/bg-about@1x-mobile.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imgs/mobile/backgraund/bg-about@2x-mobile.webp);
+    background-size: 80px;
+  }
+  background-repeat: no-repeat;
+  background-position: 204px 345px;
 
-    @media screen and (min-width: 736px) {
-      display: flex;
-      padding-top: 36px;
-      gap: 32px;
-    }
-
-    @media screen and (min-width: 1278px) {
-      padding-top: 64px;
-      gap: 32px;
-    }
+  @media screen and (min-width: 736px) {
+    display: flex;
+    padding-top: 36px;
+    gap: 32px;
+    background-image: url(../imgs/mobile/backgraund/bg-about@1x-mobile.webp);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imgs/mobile/backgraund/bg-about@2x-mobile.webp);
+  }
+    background-position: 472px 99px;
   }
 
-  &__donuts {
-    border-radius: 24px;
-  }
-
-  &__title {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    text-align: center;
-    color: $decor-color;
-    margin-top: 28px;
-    margin-bottom: 8px;
-
-    @media screen and (min-width: 736px) {
-      text-align: start;
-      font-size: 32px;
-      margin-top: 0;
-      margin-bottom: 28px;
-    }
-  }
-
-  &__item {
-    padding-bottom: 28px;
-
-    @media screen and (min-width: 1278px) {
-      padding-bottom: 30px;
-    }
-    &:last-child {
-      display: none;
-
-      @media screen and (min-width: 1278px) {
-        display: flex;
+  @media screen and (min-width: 1278px) {
+    padding-top: 64px;
+    gap: 32px;
+    background-image: url(../imgs/desktop/backgrounds/about-bg@1x-desktop.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../imgs/desktop/backgrounds/about-bg@2x-desktop.webp);
+        background-size: 100px;
       }
-    }
+    background-position: 785px 116px;
+    background-size: 100px;
+    
   }
+}
 
-  &__text {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: $main-text-color;
+&__donuts {
+  border-radius: 24px;
+}
+
+&__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: $decor-color;
+  margin-top: 28px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 736px) {
+    text-align: start;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+}
+
+&__item {
+  padding-bottom: 28px;
+
+  @media screen and (min-width: 1278px) {
+    padding-bottom: 30px;
+  }
+  &:last-child {
+    display: none;
 
     @media screen and (min-width: 1278px) {
-      font-size: 18px;
+      display: flex;
     }
   }
+}
 
-  &__continue {
-    color: $main-text-color;
-    font-family: Montserrat;
+&__text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $main-text-color;
+
+  @media screen and (min-width: 1278px) {
     font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-
-    @media screen and (min-width: 1278px) {
-      display: none;
-    }
-
   }
+}
+
+&__continue {
+  color: $main-text-color;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media screen and (min-width: 1278px) {
+    display: none;
+  }
+}
 }

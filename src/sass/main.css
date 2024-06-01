@@ -193,55 +193,66 @@ html {
 }
 .hero__title {
   color: #3c322d;
+  text-align: center;
   font-family: Montserrat Alternates;
-  font-size: 60px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  letter-spacing: -0.84px;
+  margin-bottom: 18px;
+  max-width: 280px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   .hero__title {
     color: #3c322d;
     font-family: Montserrat Alternates;
     font-size: 30px;
     font-weight: 600;
+    text-align: start;
+    margin-bottom: 20px;
+    max-width: 319px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
     color: #3c322d;
-    text-align: center;
     font-family: Montserrat Alternates;
-    font-size: 28px;
+    text-align: start;
+    font-size: 60px;
     font-weight: 600;
-    letter-spacing: -0.84px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 757px;
   }
 }
 .hero__text {
   color: #3c322d;
   font-family: Montserrat Alternates;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 28px;
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 736px) {
   .hero__text {
+    text-align: start;
     color: #3c322d;
     font-family: Montserrat Alternates;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 24px;
   }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1280px) {
   .hero__text {
     color: #3c322d;
     font-family: Montserrat Alternates;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
+    margin-bottom: 28px;
   }
 }
 .hero__button {
-  border: #F3848C 1px;
+  border: #f3848c 1px;
   border-radius: 25px;
   background: #f3848c;
   width: 145px;
@@ -252,8 +263,29 @@ html {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 32px;
+  margin-left: 65px;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 736px) {
+  .hero__button {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__button {
+    border: #f3848c 1px;
+    border-radius: 25px;
+    background: #f3848c;
+    width: 145px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
 }
 .hero__button:hover {
   color: #f3848c;
@@ -267,6 +299,7 @@ html {
 .hero__list {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .hero__svg {
   width: 16px;
@@ -730,32 +763,43 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 280px;
-  padding-bottom: 101px;
 }
 @media screen and (min-width: 736px) {
   .speakers__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     gap: 32px;
-    width: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
   .speakers__list {
-    gap: 104px;
-    width: 1141px;
+    gap: 32px;
   }
+}
+.speakers__item-img {
+  position: relative;
 }
 .speakers__bg-img {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  width: 288px;
-  height: 288px;
+  width: 130px;
+  height: 130px;
   background-color: pink;
   border-radius: 50%;
+  position: relative;
+}
+@media screen and (min-width: 736px) {
+  .speakers__bg-img {
+    width: 152px;
+    height: 152px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .speakers__bg-img {
+    width: 288px;
+    height: 288px;
+  }
 }
 .speakers__sub-title {
   color: var(--, #3C322D);
@@ -763,6 +807,7 @@ html {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 600;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 736px) {
@@ -771,12 +816,14 @@ html {
   }
 }
 .speakers__text {
-  color: var(--, #3C322D);
+  color: #3C322D;
   text-align: center;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 500;
   max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 736px) {
   .speakers__text {
@@ -789,6 +836,33 @@ html {
     font-size: 16px;
     max-width: 181px;
   }
+}
+.speakers__item {
+  position: relative;
+}
+.speakers__wrap-img {
+  position: absolute;
+  top: -15px;
+  left: 40px;
+  z-index: 4;
+}
+.speakers__wrap-img-second {
+  position: absolute;
+  top: -23px;
+  left: 20px;
+  z-index: 4;
+}
+.speakers__wrap-img-therd {
+  position: absolute;
+  top: -22px;
+  left: 52px;
+  z-index: 4;
+}
+.speakers__wrap-img-fours {
+  position: absolute;
+  top: -16px;
+  left: 18px;
+  z-index: 4;
 }
 
 .price {
@@ -1014,13 +1088,13 @@ html {
 .reviews {
   padding-top: 50px;
   padding-bottom: 100px;
-  background-image: url(./imgs/desktop/reviews/reviews-bg1@1x-desktop.webp);
+  background-image: url(../imgs/desktop/reviews/reviews-bg1@1x-desktop.webp);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 101px;
 }
 .reviews__container {
-  background-image: url(./imgs/desktop/reviews/reviews-bg2@1x-desktop.webp), url(./imgs/desktop/reviews/reviews-bg3@1x-desktop.webp);
+  background-image: url(../imgs/desktop/reviews/reviews-bg2@1x-desktop.webp), url(../imgs/desktop/reviews/reviews-bg3@1x-desktop.webp);
   background-repeat: no-repeat;
   background-position-x: 85px, 971px;
   background-position-y: 608px, 697px;
@@ -1102,7 +1176,17 @@ html {
 }
 
 .registration {
-  padding: 0px 0px 80px 0px;
+  padding: 0px 0px 80px;
+  background-image: url(../../imgs/mobile/backgraund/bg-decor-contact@1x-mobile.webp);
+  background-size: 308px, 974px;
+  background-position-x: center;
+  background-position-y: 12px;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .registration {
+    background-image: url(../../imgs/mobile/backgraund/bg-decor-contact@2x-mobile.webp);
+  }
 }
 .registration__title {
   text-align: center;
@@ -1129,11 +1213,15 @@ html {
   color: #2E2520;
   font-size: 16px;
   font-weight: 400;
+  background-color: transparent;
+  background-color: #F6F7F7;
 }
 .registration__input::placeholder {
   color: #2E2520;
   font-size: 16px;
   font-weight: 400;
+  background-color: transparent;
+  background-color: #F6F7F7;
 }
 .registration__ditection {
   display: flex;
@@ -1144,7 +1232,6 @@ html {
 .registration__button {
   position: absolute;
   top: 103px;
-  right: 232px;
   display: block;
   width: 145px;
   height: 40px;
@@ -1153,20 +1240,76 @@ html {
   font-size: 18px;
   font-weight: 400;
   border-radius: 25px;
-  background: #F3848C;
   border: none;
   box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+  cursor: pointer;
+  background: #f3848c;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.registration__button:hover {
+  color: #f3848c;
+  border: 1px solid #f3848c;
+  box-shadow: 10px 15px 25px 0px rgba(232, 183, 183, 0.45);
+  background: #fff;
 }
 
 .block {
   position: relative;
-  background-color: #fff;
   display: flex;
-  padding: 40px 0px 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 0px 26px 0px;
+  background-image: url(../../imgs/mobile/registration/registration-bg@1x-mobile.webp);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: cover;
   border-radius: 10px;
-  box-shadow: 10px 15px 25px 0px rgba(210, 201, 201, 0.45);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .block {
+    background-image: url(../../imgs/mobile/registration/registration-bg@2x-mobile.webp);
+  }
+}
+@media screen and (min-width: 736px) {
+  .block {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    background-image: url(../../imgs/tablet/registration/registration-bg@1x-tablet.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-device-pixel-ratio: 2), screen and (min-width: 736px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-resolution: 192dpi), screen and (min-width: 736px) and (min-resolution: 2dppx) {
+  .block {
+    background-image: url(../../imgs/tablet/registration/registration-bg@2x-tablet.webp);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block {
+    padding: 40px;
+    background-image: url(../../imgs/desktop/registration/registration-bg@1x-desktop.webp);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .block {
+    background-image: url(../../imgs/desktop/registration/registration-bg@2x-desktop.webp);
+  }
+}
+.block__text {
+  border-left: solid 1px #2E2520;
+  padding-left: 28px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 736px) {
+  .block__text {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block__text {
+    padding-left: 40px;
+  }
 }
 .block__text {
   border-left: solid 1px #2E2520;
@@ -1175,8 +1318,28 @@ html {
 .block__day {
   padding-right: 28px;
   display: flex;
-  align-items: start;
+  align-items: center;
   padding-top: 57px;
+}
+.block__img {
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 10px;
+  width: 453px;
+  height: 246px;
+}
+@media screen and (min-width: 736px) {
+  .block__img {
+    width: 250px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block__img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 .backdrop {
@@ -1203,6 +1366,30 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(../imgs/mobile/menu/menu-bg2@1xmobile.webp), url(../imgs/mobile/menu/menu-bg1@1xmobile.webp);
+  background-repeat: no-repeat;
+  background-position: right center, bottom left;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../imgs/mobile/menu/menu-bg2@2xmobile.webp), url(../imgs/mobile/menu/menu-bg1@2xmobile.webp);
+    background-repeat: no-repeat;
+    background-position: right center, bottom left;
+  }
+}
+@media screen and (min-width: 736px) {
+  .menu {
+    background-image: url(../imgs/tablet/menu/menu-bg2@1xtablet.webp), url(../imgs/tablet/menu/menu-bg@1xtablet.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-device-pixel-ratio: 2), screen and (min-width: 736px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-resolution: 192dpi), screen and (min-width: 736px) and (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../imgs/tablet/menu/menu-bg2@2xtablet.webp), url(../imgs/tablet/menu/menu-bg@2xtablet.webp);
+  }
 }
 @media screen and (min-width: 1280px) {
   .menu {
